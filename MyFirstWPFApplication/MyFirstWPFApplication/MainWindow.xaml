@@ -1,0 +1,15 @@
+﻿<Window x:Class="MyFirstWPFApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyFirstWPFApplication"
+        mc:Ignorable="d"
+        Title="My First WPF Application" Height="350" Width="525">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Margin="0,0,21,8">
+        <Button Content="Hello world" Margin="10,10,0,0" Click="Button_Click" Height="37" Width="73" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" Height="35" Margin="139,12,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Calendar Margin="0,67,0,0" Height="218" VerticalAlignment="Top" HorizontalAlignment="Right" Width="203"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Width="85" Height="40" Click="button_Click_1"/>
+    </Grid>
+</Window>
