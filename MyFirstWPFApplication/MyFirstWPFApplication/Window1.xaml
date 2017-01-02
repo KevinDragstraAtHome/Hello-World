@@ -7,7 +7,31 @@
         mc:Ignorable="d"
         Title="Window1" Height="300" Width="300">
     <Grid RenderTransformOrigin="0.493,0.499">
-        <Label x:Name="label" Content="Dit is mijn eerste label" HorizontalAlignment="Left" Margin="29,23,0,0" VerticalAlignment="Top"/>
+        <Grid x:Name="firstNameGrid" Height="31" Margin="21,9,14,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Label Content="FirstName:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.274,1.858"/>
+            <TextBox x:Name="firstName" Height="23" Margin="90,3,5,0" TextWrapping="Wrap" Text="Kevin" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid x:Name="lastNameGrid" Height="31" Margin="21,41,14,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Label Content="LastName:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.274,1.858"/>
+            <TextBox x:Name="lastName" Height="23" Margin="90,3,5,0" TextWrapping="Wrap" Text="Dragstra" VerticalAlignment="Top"/>
+        </Grid>
+
 
     </Grid>
 </Window>
